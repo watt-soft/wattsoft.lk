@@ -17,8 +17,8 @@ export const Projects: React.FC = () => {
     { key: 'ai', label: 'AI & Analytics' },
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   const featuredProjects = filteredProjects.filter(project => project.featured);
@@ -41,7 +41,7 @@ export const Projects: React.FC = () => {
             </h2>
           </div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Explore our portfolio of successful projects that showcase our expertise 
+            Explore our portfolio of successful projects that showcase our expertise
             in delivering innovative software solutions across various industries and technologies.
           </p>
         </motion.div>
@@ -61,11 +61,10 @@ export const Projects: React.FC = () => {
             <button
               key={category.key}
               onClick={() => setActiveFilter(category.key)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
-                activeFilter === category.key
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${activeFilter === category.key
                   ? 'bg-primary-500 text-white shadow-lg'
                   : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-600'
-              }`}
+                }`}
             >
               {category.label}
             </button>
@@ -85,7 +84,7 @@ export const Projects: React.FC = () => {
               <h3 className="text-2xl font-heading font-semibold text-gray-900 dark:text-white mb-8 text-center">
                 Featured Projects
               </h3>
-              <div className="grid lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 justify-center">
                 {featuredProjects.map((project, index) => (
                   <ProjectCard
                     key={project.id}
@@ -106,7 +105,7 @@ export const Projects: React.FC = () => {
                   More Projects
                 </h3>
               )}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                 {regularProjects.map((project, index) => (
                   <ProjectCard
                     key={project.id}
@@ -131,7 +130,7 @@ export const Projects: React.FC = () => {
             Ready to Start Your Project?
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Let's discuss how we can bring your vision to life with our proven expertise 
+            Let's discuss how we can bring your vision to life with our proven expertise
             and innovative approach to software development.
           </p>
           <motion.a
