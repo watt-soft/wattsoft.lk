@@ -2,8 +2,8 @@ export interface Service {
   id: string;
   title: string;
   description: string;
-  icon: 'Globe' | 'Smartphone' | 'Cloud' | 'Brain' | 'Palette' | 'Zap' | 'BarChart' | 'Shield';
-  category: 'web' | 'mobile' | 'cloud' | 'ai';
+  icon: 'Globe' | 'Smartphone' | 'Cloud' | 'Brain' | 'Palette' | 'Zap' | 'BarChart' | 'Shield' | 'Monitor' | 'Video' | 'Network';
+  category: 'web' | 'mobile' | 'cloud' | 'ai' | 'hardware' | 'automation' | 'marketing' | 'networking';
   features: string[];
 }
 
