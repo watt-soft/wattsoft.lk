@@ -5,7 +5,7 @@ export const testimonials: Testimonial[] = [
     id: '1',
     name: 'Sarah Johnson',
     role: 'CTO',
-    company: 'TechCorp Solutions',
+    company: 'GoldenTalks',
     content: 'Wattsoft transformed our digital presence with their innovative web development solutions. The team delivered beyond our expectations with exceptional attention to detail.',
     avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
