@@ -32,9 +32,10 @@ export const Footer: React.FC = () => {
 
   const socialLinks = [
     { Icon: Facebook, href: '#', label: 'Facebook' },
-    { Icon: Twitter, href: '#', label: 'Twitter' },
+    // { Icon: Twitter, href: '#', label: 'Twitter' },
     { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
+    // { Icon: Instagram, href: '#', label: 'Instagram' },
+    // { Icon: Facebook, href: '#', label: 'WhatsApp Chanel' }
   ];
 
   return (
