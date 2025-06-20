@@ -57,12 +57,18 @@ export const Hero: React.FC = () => {
                 variant="primary" 
                 size="lg"
                 icon={<ArrowRight size={20} />}
+                onClick={() => {
+                const target = document.querySelector("#contact");
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               >
                 Start Your Project
               </Button>
-              <Button variant="secondary" size="lg">
+              {/* <Button variant="secondary" size="lg">
                 View Our Work
-              </Button>
+              </Button> */}
             </div>
 
             {/* Stats */}
@@ -73,9 +79,9 @@ export const Hero: React.FC = () => {
               className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200 dark:border-gray-700"
             >
               {[
-                { number: '200+', label: 'Projects Completed' },
-                { number: '50+', label: 'Happy Clients' },
-                { number: '5+', label: 'Years Experience' },
+                // { number: '200+', label: 'Projects Completed' },
+                // { number: '50+', label: 'Happy Clients' },
+                // { number: '5+', label: 'Years Experience' },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-primary-500">
