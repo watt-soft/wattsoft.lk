@@ -26,7 +26,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
             className="text-primary-500 group-hover:text-white transition-colors duration-300" 
           />
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 items-center justify-end">
           {service.category.map((category: string, idx: number) => (
             <span
               key={idx}

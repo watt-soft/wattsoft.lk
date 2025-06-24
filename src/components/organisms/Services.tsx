@@ -53,16 +53,16 @@ export const Services: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center items-center gap-4 mb-12"
         >
           {categories.map((category) => (
             <button
               key={category.key}
               onClick={() => setActiveFilter(category.key as ServiceCategory)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
-                activeFilter === category.key
-                  ? 'bg-primary-500 text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 whitespace-nowrap ${
+          activeFilter === category.key
+            ? 'bg-primary-500 text-white shadow-lg'
+            : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
               }`}
             >
               {category.label}
