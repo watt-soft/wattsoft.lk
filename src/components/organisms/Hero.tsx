@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-accent-orange/20 dark:from-gray-900 dark:to-gray-800"></div>
-      
+
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500 rounded-full blur-3xl animate-pulse"></div>
@@ -35,10 +35,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 dark:bg-primary-900 text-primary-500 rounded-full text-sm font-medium"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 dark:bg-accent-orange/10 text-orange-800 dark:text-white rounded-full text-sm font-semibold"
             >
-              <Zap size={16} />
-              Innovative Software Solutions
+              {/* <Zap size={16} /> */}
+              Empowering the Future with Smart Tech & Clean Energy
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white leading-tight">
@@ -48,21 +48,21 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-              Transform your digital presence with cutting-edge web development, mobile applications, 
+              Transform your digital presence with cutting-edge web development, mobile applications,
               and cloud solutions designed to accelerate your business growth.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="primary" 
+              <Button
+                variant="primary"
                 size="lg"
                 icon={<ArrowRight size={20} />}
                 onClick={() => {
-                const target = document.querySelector("#contact");
-                if (target) {
-                  target.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+                  const target = document.querySelector("#contact");
+                  if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Start Your Project
               </Button>
