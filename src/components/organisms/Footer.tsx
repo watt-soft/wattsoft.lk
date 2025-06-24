@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
           </motion.div>
 
           {/* Company */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact Info */}
           <motion.div
@@ -136,22 +136,22 @@ export const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-300">
                 <Mail size={16} className="text-primary-400" />
-                <span>hello@wattsoft.com</span>
+                <span>info@wattsoft.lk</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone size={16} className="text-primary-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+94 (70) 432 1040</span>
               </div>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin size={16} className="text-primary-400 mt-1" />
-                <span>123 Tech Street<br />Silicon Valley, CA 94000</span>
+                <span>31/1/B, Ranasinghe Road<br />Mawanella, Sri Lanka</span>
               </div>
             </div>
           </motion.div>
         </div>
 
         {/* Newsletter Signup */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -181,19 +181,19 @@ export const Footer: React.FC = () => {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
+          className="border-t border-gray-800 pt-8 flex flex-col items-center justify-center gap-4 text-center"
         >
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Wattsoft Pvt Ltd. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
+          {/* <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
               Privacy Policy
             </a>
@@ -203,7 +203,7 @@ export const Footer: React.FC = () => {
             <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
               Cookie Policy
             </a>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </footer>
