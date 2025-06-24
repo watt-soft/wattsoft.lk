@@ -15,7 +15,7 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   const sizes = {
     sm: { icon: 20, text: 'text-lg' },
-    md: { icon: 25, text: 'text-xl' },
+    md: { icon: 30, text: 'text-xl' },
     lg: { icon: 35, text: 'text-2xl' }
   };
 
@@ -34,7 +34,7 @@ export const Logo: React.FC<LogoProps> = ({
         style={{
           maxHeight: sizes[size].icon * 1,
           objectPosition: 'center',
-          ...(navbar ? { transform: 'scale(1.0)', zoom: '1.0' } : { transform: 'scale(1.0)', zoom: '1' })
+          ...(navbar ? { transform: 'scale(1.2)', zoom: '1.3' } : { transform: 'scale(1.0)', zoom: '1' })
         }}
       />
     </div>
