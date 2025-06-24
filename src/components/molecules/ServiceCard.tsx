@@ -26,9 +26,16 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
             className="text-primary-500 group-hover:text-white transition-colors duration-300" 
           />
         </div>
-        <span className="text-xs font-medium px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full uppercase tracking-wide">
-          {service.category}
-        </span>
+        <div className="flex flex-wrap gap-2">
+          {service.category.map((category: string, idx: number) => (
+            <span
+              key={idx}
+              className="text-xs font-medium px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full uppercase tracking-wide"
+            >
+              {category}
+            </span>
+          ))}
+        </div>
       </div>
       
       <h3 className="text-xl font-heading font-semibold text-gray-900 dark:text-white mb-3">

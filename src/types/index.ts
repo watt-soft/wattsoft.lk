@@ -3,7 +3,7 @@ export interface Service {
   title: string;
   description: string;
   icon: 'Globe' | 'Smartphone' | 'Cloud' | 'Brain' | 'Palette' | 'Zap' | 'BarChart' | 'Shield' | 'Monitor' | 'Video' | 'Network';
-  category: 'web' | 'mobile' | 'cloud' | 'ai' | 'hardware' | 'automation' | 'marketing' | 'networking';
+  category: Array<'web' | 'mobile' | 'cloud' | 'ai' | 'hardware' | 'automation' | 'marketing' | 'networking' | 'infrastructure'>;
   features: string[];
 }
 
