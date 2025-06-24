@@ -12,7 +12,8 @@ export const Contact: React.FC = () => {
     email: '',
     company: '',
     service: '',
-    message: ''
+    message: '',
+    contact: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { elementRef, isIntersecting } = useIntersectionObserver();
@@ -37,7 +38,8 @@ export const Contact: React.FC = () => {
       email: '',
       company: '',
       service: '',
-      message: ''
+      message: '',
+      contact: ''
     });
     setIsSubmitting(false);
   };
