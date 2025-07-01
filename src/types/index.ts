@@ -12,6 +12,8 @@ export interface Testimonial {
   name: string;
   role: string;
   company: string;
+  logoOriginal: string;
+  logoWhite: string;
   content: string;
   avatar: string;
   rating: number;
