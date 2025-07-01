@@ -3,66 +3,107 @@ import { Service } from '../types';
 export const services: Service[] = [
   {
     id: '1',
-    title: 'Web Development',
-    description: 'Custom web applications built with modern technologies for optimal performance and user experience.',
-    icon: 'Globe',
-    category: 'web',
-    features: ['React/Vue.js', 'Node.js', 'Progressive Web Apps', 'E-commerce Solutions']
+    title: 'Cloud-Based POS Systems',
+    description: 'Modern point-of-sale systems that work anywhere with the internet. Manage sales, inventory, and customers from any device.',
+    icon: 'Cloud',
+    category: ['cloud', 'automation', 'web'],
+    features: [
+      'Real-time Sales Tracking',
+      'Inventory Management',
+      'Customer Database',
+      'Multi-location Support'
+    ]
   },
   {
     id: '2',
-    title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.',
-    icon: 'Smartphone',
-    category: 'mobile',
-    features: ['React Native', 'Flutter', 'iOS Development', 'Android Development']
+    title: 'On-Premise POS Systems',
+    description: 'Secure, offline-capable point-of-sale systems installed directly at your business location.',
+    icon: 'Monitor',
+    category: ['infrastructure', 'automation'],
+    features: [
+      'Offline Operation',
+      'Local Data Storage',
+      'Hardware Integration',
+      'Custom Setup'
+    ]
   },
   {
     id: '3',
-    title: 'Cloud Solutions',
-    description: 'Scalable cloud infrastructure and migration services to optimize your business operations.',
-    icon: 'Cloud',
-    category: 'cloud',
-    features: ['AWS/Azure', 'DevOps', 'Microservices', 'Container Orchestration']
+    title: 'Custom Process Automation',
+    description: 'Automate repetitive tasks in your business to save time and reduce errors. Streamline your workflows.',
+    icon: 'Zap',
+    category: ['automation', 'ai', 'cloud'],
+    features: [
+      'Workflow Automation',
+      'Task Scheduling',
+      'Data Processing',
+      'Role-based Access Control',
+      'Dashboards'
+    ]
   },
   {
     id: '4',
-    title: 'AI & Machine Learning',
-    description: 'Intelligent solutions powered by artificial intelligence and machine learning algorithms.',
-    icon: 'Brain',
-    category: 'ai',
-    features: ['Natural Language Processing', 'Computer Vision', 'Predictive Analytics', 'Automation']
+    title: 'Digital Marketing Content',
+    description: 'Eye catching animations, themes, and video clips to boost your brand and attract more customers.',
+    icon: 'Video',
+    category: ['marketing'],
+    features: [
+      'Animated Videos',
+      'Brand Themes',
+      'Marketing Clips',
+      'Social Media Content'
+    ]
   },
   {
     id: '5',
-    title: 'UI/UX Design',
-    description: 'User-centered design solutions that create intuitive and engaging digital experiences.',
-    icon: 'Palette',
-    category: 'web',
-    features: ['User Research', 'Prototyping', 'Design Systems', 'Usability Testing']
+    title: 'Mobile App Development',
+    description: 'Build custom mobile apps for Android and iPhone that your customers will love to use.',
+    icon: 'Smartphone',
+    category: ['mobile', 'web'],
+    features: [
+      'Android Apps',
+      'iPhone Apps',
+      'User-Friendly Design',
+      'Play Store / App Store Publishing'
+    ]
   },
   {
     id: '6',
-    title: 'Digital Transformation',
-    description: 'Comprehensive digital strategies to modernize your business processes and operations.',
-    icon: 'Zap',
-    category: 'cloud',
-    features: ['Process Automation', 'Legacy System Migration', 'Digital Strategy', 'Change Management']
+    title: 'AI-Driven Software Solutions',
+    description: 'Smart software that learns and adapts to help your business make better decisions automatically.',
+    icon: 'Brain',
+    category: ['ai', 'automation', 'cloud'],
+    features: [
+      'Smart Analytics',
+      'Automated Decisions',
+      'Predictive Insights',
+      'Intelligent Processing'
+    ]
   },
   {
     id: '7',
-    title: 'Data Analytics',
-    description: 'Transform your data into actionable insights with advanced analytics and visualization.',
-    icon: 'BarChart',
-    category: 'ai',
-    features: ['Business Intelligence', 'Data Visualization', 'Real-time Analytics', 'Reporting Dashboards']
+    title: 'Custom Web Design & Hosting',
+    description: 'Beautiful, Responsive, lag-free websites that work perfectly on all devices. Includes reliable hosting and ongoing support.',
+    icon: 'Globe',
+    category: ['web', 'cloud'],
+    features: [
+      'Responsive Design',
+      'Fast Loading',
+      'Secure Hosting',
+      'Mobile Optimized'
+    ]
   },
   {
     id: '8',
-    title: 'Cybersecurity',
-    description: 'Comprehensive security solutions to protect your digital assets and ensure compliance.',
-    icon: 'Shield',
-    category: 'cloud',
-    features: ['Security Audits', 'Penetration Testing', 'Compliance Management', 'Incident Response']
+    title: 'Enterprise Networking Systems',
+    description: 'Large-scale network solutions for big businesses. Secure, fast, and reliable connections across all locations.',
+    icon: 'Network',
+    category: ['infrastructure'],
+    features: [
+      'Scalable Infrastructure',
+      'Security Management',
+      'Multi-site Connectivity',
+      '24/7 Support'
+    ]
   }
 ];

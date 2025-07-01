@@ -17,7 +17,7 @@ function App() {
         <main className="pt-16 md:pt-20 overflow-x-hidden">
           <Hero />
           <Services />
-          <Projects />
+          {/* <Projects /> */}
           <About />
           <Testimonials />
           <Contact />

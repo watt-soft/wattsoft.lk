@@ -2,16 +2,22 @@ export interface Service {
   id: string;
   title: string;
   description: string;
-  icon: 'Globe' | 'Smartphone' | 'Cloud' | 'Brain' | 'Palette' | 'Zap' | 'BarChart' | 'Shield';
-  category: 'web' | 'mobile' | 'cloud' | 'ai';
+  icon: 'Globe' | 'Smartphone' | 'Cloud' | 'Brain' | 'Palette' | 'Zap' | 'BarChart' | 'Shield' | 'Monitor' | 'Video' | 'Network';
+  category: Array<'web' | 'mobile' | 'cloud' | 'ai' | 'hardware' | 'automation' | 'marketing' | 'networking' | 'infrastructure'>;
   features: string[];
 }
 
+export interface Technology {
+  name: string;
+  logo: string;
+}
 export interface Testimonial {
   id: string;
   name: string;
   role: string;
   company: string;
+  logoOriginal: string;
+  logoWhite: string;
   content: string;
   avatar: string;
   rating: number;

@@ -4,8 +4,10 @@ import { ServiceCard } from '../molecules/ServiceCard';
 import { services } from '../../data/services';
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 
+type ServiceCategory = 'all' | 'web' | 'mobile' | 'cloud' | 'ai' | 'automation' | 'marketing' | 'hardware' | 'networking' | 'infrastructure';
+
 export const Services: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<string>('all');
+  const [activeFilter, setActiveFilter] = useState<ServiceCategory>('all');
   const { elementRef, isIntersecting } = useIntersectionObserver();
 
   const categories = [
@@ -13,12 +15,19 @@ export const Services: React.FC = () => {
     { key: 'web', label: 'Web Development' },
     { key: 'mobile', label: 'Mobile Apps' },
     { key: 'cloud', label: 'Cloud Solutions' },
-    { key: 'ai', label: 'AI & ML' },
+    { key: 'ai', label: 'AI/ML' },
+    { key: 'automation', label: 'Business Automation' },
+    { key: 'marketing', label: 'Digital Marketing' },
+    { key: 'infrastructure', label: 'IT Infrastructure' },
   ];
 
   const filteredServices = activeFilter === 'all' 
     ? services 
-    : services.filter(service => service.category === activeFilter);
+    : services.filter(service => 
+        Array.isArray(service.category)
+          ? service.category.includes(activeFilter)
+          : service.category === activeFilter
+      );
 
   return (
     <section id="services" className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -44,16 +53,16 @@ export const Services: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center items-center gap-4 mb-12"
         >
           {categories.map((category) => (
             <button
               key={category.key}
-              onClick={() => setActiveFilter(category.key)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
-                activeFilter === category.key
-                  ? 'bg-primary-500 text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+              onClick={() => setActiveFilter(category.key as ServiceCategory)}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-200 whitespace-nowrap ${
+          activeFilter === category.key
+            ? 'bg-primary-500 text-white shadow-lg'
+            : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
               }`}
             >
               {category.label}

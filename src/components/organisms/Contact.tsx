@@ -12,7 +12,8 @@ export const Contact: React.FC = () => {
     email: '',
     company: '',
     service: '',
-    message: ''
+    message: '',
+    contact: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { elementRef, isIntersecting } = useIntersectionObserver();
@@ -27,17 +28,18 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
+
     alert('Thank you for your message! We\'ll get back to you soon.');
     setFormData({
       name: '',
       email: '',
       company: '',
       service: '',
-      message: ''
+      message: '',
+      contact: ''
     });
     setIsSubmitting(false);
   };
@@ -46,26 +48,26 @@ export const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@wattsoft.com',
-      action: 'mailto:hello@wattsoft.com'
+      content: 'info@wattsoft.lk',
+      action: 'mailto:info@wattsoft.lk'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      content: '+94 (70) 432 1040',
+      action: 'tel:+94704321040'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: '123 Tech Street, Silicon Valley, CA 94000',
+      content: '31/1/B, Ranasinghe Road, Mawanella, Sri Lanka',
       action: '#'
     }
   ];
 
   const businessHours = [
     { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM' },
-    { day: 'Saturday', hours: '10:00 AM - 4:00 PM' },
+    { day: 'Saturday', hours: 'Closed' },
     { day: 'Sunday', hours: 'Closed' }
   ];
 
@@ -83,7 +85,7 @@ export const Contact: React.FC = () => {
             Get In <span className="text-primary-500">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to start your next project? Let's discuss how we can help transform 
+            Ready to start your next project? Let's discuss how we can help transform
             your business with innovative software solutions.
           </p>
         </motion.div>
@@ -99,7 +101,7 @@ export const Contact: React.FC = () => {
             <h3 className="text-2xl font-heading font-semibold text-gray-900 dark:text-white mb-6">
               Send us a message
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <Input
@@ -110,6 +112,18 @@ export const Contact: React.FC = () => {
                   placeholder="John Doe"
                   required
                 />
+
+                <Input
+                  label="Company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
+                  placeholder="Your Company"
+                />
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+
                 <Input
                   label="Email Address"
                   type="email"
@@ -119,16 +133,19 @@ export const Contact: React.FC = () => {
                   placeholder="john@company.com"
                   required
                 />
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-4">
                 <Input
-                  label="Company"
-                  name="company"
-                  value={formData.company}
+                  label="Contact Number"
+                  name="contact"
+                  value={formData.contact}
                   onChange={handleInputChange}
-                  placeholder="Your Company"
+                  placeholder="+94 7X XXX XXXX"
+                  required
                 />
+
+              </div>
+
+              <div className="grid md:grid-cols-1 gap-4">
+
                 <div className="space-y-1">
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                     Service Interest
@@ -148,8 +165,17 @@ export const Contact: React.FC = () => {
                     <option value="consulting">Consulting</option>
                   </select>
                 </div>
+                {/* <Input
+                  label="Email Address"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="john@company.com"
+                  required
+                /> */}
               </div>
-              
+
               <TextArea
                 label="Message"
                 name="message"
@@ -159,7 +185,7 @@ export const Contact: React.FC = () => {
                 rows={5}
                 required
               />
-              
+
               <Button
                 type="submit"
                 variant="primary"
@@ -238,7 +264,7 @@ export const Contact: React.FC = () => {
             </motion.div>
 
             {/* Global Presence */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -253,7 +279,7 @@ export const Contact: React.FC = () => {
               <p className="text-gray-600 dark:text-gray-300">
                 Serving clients across 15+ countries with 24/7 support availability
               </p>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

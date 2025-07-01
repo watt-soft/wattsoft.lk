@@ -1,3 +1,4 @@
+import { on } from 'events';
 import React from 'react';
 
 interface NavigationItemProps {
@@ -18,8 +19,15 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      // Call onSuccess after a short delay to allow scroll to finish
+      setTimeout(() => {
+        onClick?.();
+      }, 750); // Adjust delay as needed
+    } else {
+      onClick?.();
     }
-    onClick?.();
+
+
   };
 
   return (

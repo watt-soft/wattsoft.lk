@@ -29,13 +29,14 @@ export const About: React.FC = () => {
             About <span className="text-primary-500">Wattsoft</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Founded in 2018, Wattsoft has been at the forefront of digital innovation, 
-            helping businesses transform their operations through cutting-edge technology solutions.
+            Founded in 2024, Wattsoft is a rising software startup committed to driving digital innovation.
+            In just one year, we’ve helped businesses enhance their operations with smart, scalable, and customized technology solutions laying a strong foundation for long term impact and growth.
+
           </p>
         </motion.div>
 
         {/* Stats Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -60,7 +61,7 @@ export const About: React.FC = () => {
               </p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* Company Values */}
         <motion.div
@@ -105,7 +106,7 @@ export const About: React.FC = () => {
         </motion.div>
 
         {/* Timeline */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -124,7 +125,7 @@ export const About: React.FC = () => {
               />
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
