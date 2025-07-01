@@ -7,6 +7,10 @@ export interface Service {
   features: string[];
 }
 
+export interface Technology {
+  name: string;
+  logo: string;
+}
 export interface Testimonial {
   id: string;
   name: string;

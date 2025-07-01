@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
 import { Logo } from '../atoms/Logo';
 import { NavigationItem } from '../molecules/NavigationItem';
+import { technologies } from '../../data/technologies';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -60,12 +61,12 @@ export const Footer: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             className="lg:col-span-1"
           >
             <Logo size="lg" className="mb-6" />
             <p className="text-gray-300 leading-relaxed mb-6">
-              Empowering businesses with innovative software solutions. 
+              Empowering businesses with innovative software solutions.
               We transform ideas into digital reality with cutting-edge technology.
             </p>
             <div className="flex gap-4">
@@ -94,7 +95,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <NavigationItem 
+                  <NavigationItem
                     href={link.href}
                     className="text-gray-300 hover:text-primary-400"
                   >
@@ -105,6 +106,28 @@ export const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
+          {/* Technologies */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-col"
+          >
+            <h3 className="text-lg font-heading font-semibold mb-4">Technologies</h3>
+            <div className="flex flex-wrap gap-4 items-center">
+              {technologies.map((tech) => (
+                <div key={tech.name} className="flex flex-col items-center">
+                  <img
+                    src={tech.logo}
+                    alt={tech.name + ' logo'}
+                    className="h-8 w-auto mb-1"
+                    style={{ filter: 'brightness(0) invert(1)' }} // ensures white on dark bg
+                  />
+                  <span className="text-xs text-gray-400">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
           {/* Company */}
           {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
