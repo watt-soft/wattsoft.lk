@@ -26,6 +26,7 @@ export const projects: Project[] = [
     category: 'web',
     featured: true,
     completedDate: '2024'
+    // test
   },
   {
     id: '2',
