@@ -53,7 +53,7 @@ export const timelineData: TimelineItem[] = [
   {
     id: '8',
     year: '2024',
-    title: 'Innovation Lab',
+    title: 'Innovation',
     description: 'Launched our innovation lab focusing on emerging technologies and R&D.',
     milestone: true
   }
