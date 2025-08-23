@@ -49,5 +49,12 @@ export const timelineData: TimelineItem[] = [
     title: 'Innovation Lab',
     description: 'Launched our innovation lab focusing on emerging technologies and R&D.',
     milestone: true
+  },
+  {
+    id: '8',
+    year: '2024',
+    title: 'Innovation Lab',
+    description: 'Launched our innovation lab focusing on emerging technologies and R&D.',
+    milestone: true
   }
 ];
