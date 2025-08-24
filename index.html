@@ -7,21 +7,83 @@
   <!-- Ensure all relative URLs resolve from the root of your custom domain -->
   <base href="/" />
 
+  <link rel="preload" as="script" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnOwppbXBvcnQgQXBwIGZyb20gJy4vQXBwLnRzeCc7CmltcG9ydCAnLi9pbmRleC5jc3MnOwoKY3JlYXRlUm9vdChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpISkucmVuZGVyKAogIDxTdHJpY3RNb2RlPgogICAgPEFwcCAvPgogIDwvU3RyaWN0TW9kZT4KKTsK">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
   <meta name="description"
     content="Wattsoft Pvt Ltd - Empowering Businesses with Innovative Software Solutions. Expert web development, mobile apps, and digital transformation services." />
   <meta name="keywords"
     content="software development, web development, mobile apps, digital transformation, Wattsoft" />
+  <meta name="robots" content="index, follow" />
+
   <title>Wattsoft Pvt Ltd - Innovative Software Solutions</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- Standard favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- PNG versions -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+
+  <!-- Android/Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+
+  <!-- Add Apple-specific meta for better PWA feel on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- theme-color (improves mobile browser UI theming) -->
+  <meta name="theme-color" content="#ff3b00">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Wattsoft Pvt Ltd - Innovative Software Solutions" />
+  <meta property="og:description"
+    content="Empowering Businesses with Innovative Software Solutions. Expert web development, mobile apps, and digital transformation services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wattsoft.lk/" />
+  <meta property="og:image" content="https://wattsoft.lk/wattsoft-logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wattsoft Pvt Ltd - Innovative Software Solutions" />
+  <meta name="twitter:description"
+    content="Empowering Businesses with Innovative Software Solutions. Expert web development, mobile apps, and digital transformation services." />
+  <meta name="twitter:image" content="https://wattsoft.lk/wattsoft-logo.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wattsoft Pvt Ltd",
+    "url": "https://wattsoft.lk/",
+    "logo": "https://wattsoft.lk/wattsoft-logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/wattsoft",
+      "https://twitter.com/wattsoft"
+    ],
+    "description": "Empowering Businesses with Innovative Software Solutions. Expert web development, mobile apps, and digital transformation services."
+  }
+  </script>
+
+  <!-- Optional: Sitemap -->
+  <!-- Ensure you have sitemap.xml at https://wattsoft.lk/sitemap.xml -->
   <script type="module" crossorigin src="/assets/index-D9Np5hUV.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-CzhSVBD_.css">
 </head>
