@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: '31/1/B, Ranasinghe Road, Mawanella, Sri Lanka',
+      content: '470 A, Meepitiya, Kegalle, Sri Lanka',
       action: '#'
     }
   ];
