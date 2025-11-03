@@ -167,7 +167,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin size={16} className="text-primary-400 mt-1" />
-                <span>31/1/B, Ranasinghe Road<br />Mawanella, Sri Lanka</span>
+                <span>470 A, Meepitiya<br />Kegalle, Sri Lanka</span>
               </div>
             </div>
           </motion.div>
