@@ -54,7 +54,7 @@ export const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+94 (70) 432 1040',
+      content: '+94 (70) 432 1040 / 0357 300 345',
       action: 'tel:+94704321040'
     },
     {

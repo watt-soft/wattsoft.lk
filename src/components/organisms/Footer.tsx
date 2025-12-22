@@ -163,7 +163,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone size={16} className="text-primary-400" />
-                <span>+94 (70) 432 1040</span>
+                <span>+94 (70) 432 1040 / 0357 300 345</span>
               </div>
               <div className="flex items-start gap-3 text-gray-300">
                 <MapPin size={16} className="text-primary-400 mt-1" />
