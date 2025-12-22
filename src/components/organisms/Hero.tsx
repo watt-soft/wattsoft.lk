@@ -31,6 +31,13 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white leading-tight">
+              Empowering Businesses with{' '}
+              <span className="text-primary-500">Innovative</span>{' '}
+              Software Solutions
+            </h1>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -40,12 +47,6 @@ export const Hero: React.FC = () => {
               {/* <Zap size={16} /> */}
               Empowering the Future with Smart Tech & Clean Energy
             </motion.div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white leading-tight">
-              Empowering Businesses with{' '}
-              <span className="text-primary-500">Innovative</span>{' '}
-              Software Solutions
-            </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
               Transform your digital presence with cutting-edge web development, mobile applications,

@@ -214,7 +214,7 @@ export const Contact: React.FC = () => {
                 {contactInfo.map((info, index) => (
                   <motion.a
                     key={index}
-                    href={info.action}
+                    // href={info.action}
                     initial={{ opacity: 0, y: 20 }}
                     animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
