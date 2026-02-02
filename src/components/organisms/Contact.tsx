@@ -54,7 +54,7 @@ export const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+94 (70) 432 1040',
+      content: '+94 (70) 432 1040 / 0357 300 345',
       action: 'tel:+94704321040'
     },
     {
@@ -214,7 +214,7 @@ export const Contact: React.FC = () => {
                 {contactInfo.map((info, index) => (
                   <motion.a
                     key={index}
-                    href={info.action}
+                    // href={info.action}
                     initial={{ opacity: 0, y: 20 }}
                     animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
