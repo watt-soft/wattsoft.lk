@@ -1,39 +1,40 @@
 import { Service } from '../types';
 
 export const services: Service[] = [
-  {
-    id: '1',
-    title: 'Cloud-Based POS Systems',
-    description: 'Modern point-of-sale systems that work anywhere with the internet. Manage sales, inventory, and customers from any device.',
-    icon: 'Cloud',
-    category: ['cloud', 'automation', 'web'],
-    features: [
-      'Real-time Sales Tracking',
-      'Inventory Management',
-      'Customer Database',
-      'Multi-location Support'
-    ]
-  },
-  {
-    id: '2',
-    title: 'On-Premise POS Systems',
-    description: 'Secure, offline-capable point-of-sale systems installed directly at your business location.',
-    icon: 'Monitor',
-    category: ['infrastructure', 'automation'],
-    features: [
-      'Offline Operation',
-      'Local Data Storage',
-      'Hardware Integration',
-      'Custom Setup'
-    ]
-  },
+  // {
+  //   id: '1',
+  //   title: 'Cloud-Based POS Systems',
+  //   description: 'Modern point-of-sale systems that work anywhere with the internet. Manage sales, inventory, and customers from any device.',
+  //   icon: 'Cloud',
+  //   category: ['cloud', 'automation', 'web'],
+  //   features: [
+  //     'Real-time Sales Tracking',
+  //     'Inventory Management',
+  //     'Customer Database',
+  //     'Multi-location Support'
+  //   ]
+  // },
+  // {
+  //   id: '2',
+  //   title: 'On-Premise POS Systems',
+  //   description: 'Secure, offline-capable point-of-sale systems installed directly at your business location.',
+  //   icon: 'Monitor',
+  //   category: ['infrastructure', 'automation'],
+  //   features: [
+  //     'Offline Operation',
+  //     'Local Data Storage',
+  //     'Hardware Integration',
+  //     'Custom Setup'
+  //   ]
+  // },
   {
     id: '3',
-    title: 'Custom Process Automation',
+    title: 'Business Process Automation',
     description: 'Automate repetitive tasks in your business to save time and reduce errors. Streamline your workflows.',
     icon: 'Zap',
-    category: ['automation', 'ai', 'cloud'],
+    category: ['automation', 'ai', 'cloud', 'web'],
     features: [
+      'Best Engineering Solutions',
       'Workflow Automation',
       'Task Scheduling',
       'Data Processing',
@@ -41,19 +42,19 @@ export const services: Service[] = [
       'Dashboards'
     ]
   },
-  {
-    id: '4',
-    title: 'Digital Marketing Content',
-    description: 'Eye catching animations, themes, and video clips to boost your brand and attract more customers.',
-    icon: 'Video',
-    category: ['marketing'],
-    features: [
-      'Animated Videos',
-      'Brand Themes',
-      'Marketing Clips',
-      'Social Media Content'
-    ]
-  },
+  // {
+  //   id: '4',
+  //   title: 'Digital Marketing Content',
+  //   description: 'Eye catching animations, themes, and video clips to boost your brand and attract more customers.',
+  //   icon: 'Video',
+  //   category: ['marketing'],
+  //   features: [
+  //     'Animated Videos',
+  //     'Brand Themes',
+  //     'Marketing Clips',
+  //     'Social Media Content'
+  //   ]
+  // },
   {
     id: '5',
     title: 'Mobile App Development',

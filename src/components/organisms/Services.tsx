@@ -17,7 +17,7 @@ export const Services: React.FC = () => {
     { key: 'cloud', label: 'Cloud Solutions' },
     { key: 'ai', label: 'AI/ML' },
     { key: 'automation', label: 'Business Automation' },
-    { key: 'marketing', label: 'Digital Marketing' },
+    // { key: 'marketing', label: 'Digital Marketing' },
     { key: 'infrastructure', label: 'IT Infrastructure' },
   ];
 
