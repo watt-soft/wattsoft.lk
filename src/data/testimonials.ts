@@ -23,6 +23,17 @@ export const testimonials: Testimonial[] = [
     avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   },
+  {
+    id: '3',
+    name: 'Michael Chen',
+    role: 'CTO',
+    company: 'NOVUS International School',
+    logoOriginal: 'novus-logo.png',
+    logoWhite: 'novus-logo.png',
+    content: 'Their mobile app development expertise helped us launch our product 3 months ahead of schedule. Outstanding technical skills and project management.',
+    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    rating: 5
+  },
   // {
   //   id: '3',
   //   name: 'Emily Rodriguez',
