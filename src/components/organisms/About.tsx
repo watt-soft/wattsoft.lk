@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { TimelineItem } from '../molecules/TimelineItem';
 import { timelineData } from '../../data/timeline';
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
-import { Users, Award, Globe, Lightbulb } from 'lucide-react';
+import { Users, Award, Globe, Lightbulb, Cpu, Handshake, ShieldCheck } from 'lucide-react';
 
 export const About: React.FC = () => {
   const { elementRef, isIntersecting } = useIntersectionObserver();
@@ -74,17 +74,20 @@ export const About: React.FC = () => {
             {
               title: 'Innovation First',
               description: 'We embrace cutting-edge technologies and innovative approaches to solve complex business challenges.',
-              icon: '🚀'
+              icon: Cpu,
+              color: '#38BDF8',
             },
             {
               title: 'Client Success',
               description: 'Your success is our priority. We work closely with clients to ensure every project exceeds expectations.',
-              icon: '🎯'
+              icon: Handshake,
+              color: '#34D399',
             },
             {
               title: 'Quality Excellence',
               description: 'We maintain the highest standards in code quality, design, and project delivery.',
-              icon: '⭐'
+              icon: ShieldCheck,
+              color: '#818CF8',
             }
           ].map((value, index) => (
             <motion.div
@@ -94,7 +97,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
               className="text-center p-6 bg-gradient-to-br from-primary-50 to-accent-orange/10 dark:from-gray-700 dark:to-gray-600 rounded-xl"
             >
-              <div className="text-4xl mb-4">{value.icon}</div>
+              <value.icon size={60} className='text-4xl mx-auto mb-4' color={value.color} />
               <h3 className="text-xl font-heading font-semibold text-gray-900 dark:text-white mb-3">
                 {value.title}
               </h3>

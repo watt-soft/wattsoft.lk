@@ -124,7 +124,7 @@ export const Testimonials: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20"
         >
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center justify-center mx-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -135,8 +135,8 @@ export const Testimonials: React.FC = () => {
                     <img
                       src={isDark ? testimonial.logoWhite : testimonial.logoOriginal}
                       alt={testimonial.company}
-                      className="h-16 md:h-20 object-contain transition-all duration-300"
-                      style={{ maxWidth: '120px' }}
+                      className="h-28 md:h-32 object-contain transition-all duration-300"
+                      style={{ maxWidth: '200px' }}
                     />
                   </div>
                 )}
