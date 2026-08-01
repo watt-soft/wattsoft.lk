@@ -54,8 +54,8 @@ export const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+94 (70) 432 1040 / 0357 300 345',
-      action: 'tel:+94704321040'
+      content: '+94 (76) 779 6422 / 0357 300 345',
+      action: 'tel:+94767796422'
     },
     {
       icon: MapPin,
