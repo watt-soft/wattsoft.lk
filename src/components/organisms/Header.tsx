@@ -16,15 +16,15 @@ export const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const isScrolled = scrollPosition > 50;
-  const isProductPage = location.pathname.startsWith('/product') || location.pathname === '/products' || location.pathname === '/kinderflow';
+  const isProductPage = location.pathname.startsWith('/products/') || location.pathname === '/kinderflow';
 
   const navigationItems = [
     { href: '#home', label: 'Home' },
     { href: '#services', label: 'Services' },
     // { href: '#projects', label: 'Projects' },
-    { href: '/product/kinderflow', label: 'Product', isProduct: true },
+    { href: '/products/kinderflow', label: 'Product', isProduct: true },
     { href: '#about', label: 'About' },
-    // { href: '#testimonials', label: 'Testimonials' },
+    // { href: '#testimonials'  , label: 'Testimonials' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -52,11 +52,10 @@ export const Header: React.FC = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isProductPage
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isProductPage
+        ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
+        : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4 overflow-x-hidden">
         <div className="flex items-center justify-between h-16 md:h-20 w-full min-w-0">

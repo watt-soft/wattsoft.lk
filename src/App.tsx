@@ -47,10 +47,7 @@ function App() {
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/product/kinderflow" element={<ProductPage />} />
-            <Route path="/product" element={<Navigate to="/product/kinderflow" replace />} />
-            <Route path="/products" element={<Navigate to="/product/kinderflow" replace />} />
-            <Route path="/kinderflow" element={<Navigate to="/product/kinderflow" replace />} />
+            <Route path="/products/kinderflow" element={<ProductPage />} />
             <Route path="/intern" element={<InternRedirect />} />
           </Routes>
         </div>
