@@ -63,3 +63,28 @@ export interface Project {
   featured: boolean;
   completedDate: string;
 }
+
+export interface KinderFlowFeatureItem {
+  title: string;
+  description: string;
+}
+
+export interface KinderFlowFeatureCategory {
+  number: string;
+  category: string;
+  summary?: string;
+  icon: string;
+  items: KinderFlowFeatureItem[];
+}
+
+export interface KinderFlowWhyChoose {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface KinderFlowSubscriptionPillar {
+  title: string;
+  description: string;
+  icon: string;
+}
